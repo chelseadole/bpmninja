@@ -1,6 +1,6 @@
 # Import flask dependencies
 from flask import Blueprint, request, render_template
-from app import app
+from bpmninja import app
 
 
 # # Define the blueprint: 'auth', define app
