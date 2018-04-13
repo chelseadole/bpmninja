@@ -13,7 +13,6 @@ from bpmninja import app
 
 
 @app.route('/')
-@app.route('/index')
 def index():
     """Render landing page."""
-    return render_template('index.html', title="Landing Page")
+    return render_template('index.html', title="index")
