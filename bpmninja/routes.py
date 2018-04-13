@@ -16,3 +16,9 @@ from bpmninja import app
 def index():
     """Render landing page."""
     return render_template('index.html', title="index")
+
+
+@app.route('/play')
+def play():
+    """Render play page, for playing bpmninja."""
+    return render_template('play.html', title="play")
