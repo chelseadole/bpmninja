@@ -1,13 +1,10 @@
 {
   "name": "bpmninja",
   "version": "1.0.0",
-  "description": "BPM guessing game",
+  "description": "BPM ear training tool.",
   "main": "index.js",
   "directories": {
     "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

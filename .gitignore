@@ -5,6 +5,10 @@ __pycache__/
 *.pyc
 .pytest_cache/
 
+
+# Node modules
+node_modules/
+
 # C extensions
 *.so
 

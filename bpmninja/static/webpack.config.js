@@ -1,13 +1,16 @@
 const webpack = require('webpack');
 
 const config = {
-    entry: __dirname + '/js/index.jsx',
+    entry: {
+        'index': __dirname + 'js/index.jsx',
+        'play': __dirname + 'js/play.jsx'
+    }
     output: {
         path: __dirname + '/dist', 
-        filename: 'bundle.js', 
+        filename: '[name].js', 
     },
     resolve: {
         extensions: ['.js', '.jsx', '.css']
-    },
+    },2
 };
 module.exports = config;
