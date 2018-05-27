@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderNavModule } from './header-nav/header-nav.module';
 import { HomeModule } from './home/home.module';
+import { QuizModule } from './quiz/quiz.module';
 import { AppRoutingModule } from './app.routes';
 
 const routes: Routes = [];
@@ -18,6 +19,7 @@ const routes: Routes = [];
     BrowserModule,
     HeaderNavModule,
     HomeModule,
+    QuizModule,
     AppRoutingModule
   ],
   exports: [

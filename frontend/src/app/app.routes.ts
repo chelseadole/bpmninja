@@ -1,42 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const routes: Routes = [
-    {
-        path: '',
-        component: HomeComponent,
-        children: [
-        ]
-    },
-//    {
-//        path: 'play',
-//        component: PlayComponent,
-//        children: [
-//        ]
-//    },
-//    {
-//        path: 'company',
-//        component: CompanyComponent,
-//        children: [
-//            {
-//                path: 'hierarchy',
-//                component: CompanyTreeComponent
-//            }
-//        ]
-//    },
-//    {
-//        path: 'search',
-//        component: SearchComponent,
-//        children: [
-//        ]
-//    },
-//    {
-//        path: '**',
-//        component: ErrorComponent,
-//        children: [
-//        ]
-//    },
+  { path: '', component: HomeComponent },
+  { path: 'play', component: QuizComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
