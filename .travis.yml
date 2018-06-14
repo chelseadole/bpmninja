@@ -1,7 +1,7 @@
-language: python
-python:
-  - nightly
-before_install:
-  - pip install pytest pytest-cov
-script:
-  - pytest
+#language: python
+#python:
+#  - nightly
+#before_install:
+#  - pip install pytest pytest-cov
+#script:
+#  - pytest
