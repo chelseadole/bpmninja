@@ -1,6 +1,8 @@
 """DB connection spec for bpms, and users."""
+from flask_sqlalchemy import SQLAlchemy
+from run import app
 
-from run import db
+db = SQLAlchemy(app)
 
 
 class User(db.Model):
@@ -21,4 +23,4 @@ class BPM(db.Model):
     bpm = db.Column(db.Integer)
 
     def __repr__(self):
-        return '<Song: %r>, BPM: %r' % self.songTitle, self.bpm
+        return '<Song: %r>, BPM: %r' % (self.songTitle, self.bpm)
