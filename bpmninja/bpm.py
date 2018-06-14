@@ -1,4 +1,4 @@
-# Import flask dependencies
+"""API routing for /GET endpoints, to get BPM data by song ID."""
 from flask_restplus import Resource, Namespace, reqparse
 
 bpm_ns = Namespace("bpm", description="GET bpm data by song ID")
