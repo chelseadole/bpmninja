@@ -8,8 +8,7 @@ app = Flask(__name__)
 app.config['RESTPLUS_VALIDATE'] = True
 
 
-api = Api(app,
-          version='1.0',
+api = Api(version='1.0',
           title='BPM Ninja API',
           description='A simple flask API to handle the backend of bpmninja'
           )

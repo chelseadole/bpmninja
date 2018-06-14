@@ -5,7 +5,7 @@ bpm_ns = Namespace("bpm", description="GET bpm data by song ID")
 
 # Expected arguments for bpm /GET request
 bpm_parser = reqparse.RequestParser()
-bpm_parser.add_argument('songId', type=int, help='Song ID: type=int')
+bpm_parser.add_argument('songId', type=int, help='type=int')
 
 
 @bpm_ns.route("/")
