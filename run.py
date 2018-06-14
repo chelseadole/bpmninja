@@ -1,12 +1,15 @@
 """Init script."""
 from flask import Flask, Blueprint
 from flask_restplus import Api
+from flask_sqlalchemy import SQLAlchemy
 
 from bpmninja.bpm import bpm_ns
 
 app = Flask(__name__)
 app.config['RESTPLUS_VALIDATE'] = True
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 
+db = SQLAlchemy(app)
 
 api = Api(version='1.0',
           title='BPM Ninja API',
