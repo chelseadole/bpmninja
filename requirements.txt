@@ -1,5 +1,6 @@
 attrs==17.4.0
 click==6.7
+flask_restplus
 Flask==0.12.2
 itsdangerous==0.24
 Jinja2==2.10
@@ -9,4 +10,5 @@ pluggy==0.6.0
 py==1.5.3
 pytest==3.5.0
 six==1.11.0
+sqlalchemy
 Werkzeug==0.14.1

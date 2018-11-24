@@ -16,10 +16,7 @@ api = Api(version='1.0',
 
 def initialize_app():
     """Initialize bpmninja API flask app. Register ns (namespaces) and blueprints."""
-
-    # Register all API namespaces:
     api.add_namespace(bpm_ns, path='/bpm')
-
     bp = Blueprint('api', __name__, url_prefix='/api/v1')
     api.init_app(bp)
 
