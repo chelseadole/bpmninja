@@ -3,10 +3,10 @@ from flask import Flask, Blueprint
 from flask_restplus import Api
 
 from bpmninja.bpm import bpm_ns
+from bpmninja.db import db, Session
 
 app = Flask(__name__)
 app.config['RESTPLUS_VALIDATE'] = True
-
 
 api = Api(version='1.0',
           title='BPM Ninja API',
