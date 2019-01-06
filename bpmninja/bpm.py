@@ -29,5 +29,5 @@ class BPM(Resource):
                 result = song_metadata[args['songId']]
                 return result, 200
             except KeyError as err:
-                return 'songId {} is invalid. Must be between 0 and {}'.format(err, len(song_metadata - 1)), 404
+                return 'songId {} is invalid. Must be between 0 and {}'.format(err, len(song_metadata) - 1), 404
         return 'songId is required', 404
