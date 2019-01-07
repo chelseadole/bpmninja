@@ -1,0 +1,9 @@
+application: bpmninja-project
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+entrypoint: gunicorn -b :5000 run:app
+
+runtime_config:
+  python_version: 3
